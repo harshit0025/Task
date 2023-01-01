@@ -1,0 +1,40 @@
+.first-page{
+    display: flex;
+    margin: 20px;
+    border: 1px solid #5f5b5b76;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    margin: 20px 50px ;
+    padding: 20px 40px;
+}
+
+.form h1{
+    margin-left:100px ;
+}
+
+.form  input{
+    margin-bottom: 15px;
+    width: 80%;   
+    padding: 12px 15px;
+}
+
+.form  .submit{
+    padding: 10px 12px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: 10px;
+    transition: 0.3s;   
+    border: 1px solid #3d3535;
+}
+
+.form  .submit:hover{
+    cursor: pointer;
+    background-color: #088178;
+    border: none;
+}

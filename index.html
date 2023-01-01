@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITrendz Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="first-page">
+
+        <div class="form">
+            <h1>Fill This Form</h1>
+            <form action="success.html">
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email" id="email-1" required>
+                <input type="text" placeholder="Gender" required>
+                <input type="text" placeholder="Address" required>
+                <button class="submit" type="submit" onclick="emailCheck()" class="normal">Submit</button>
+            </form>
+        </div>
+        <div id="camera">
+            <div class="photo">
+                <video id="video" playsinline autoplay></video>
+            </div>
+            <button type="button">Take Picture</button>
+            <button type="reset">Reset Everything</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
