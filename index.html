@@ -7,8 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VITrendz Project</title>
     <link rel="stylesheet" href="styles.css">
-</head>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Webcam.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"
+        integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
 <body>
     <div class="first-page">
 
@@ -18,17 +25,21 @@
                 <input type="text" placeholder="Your Name" required>
                 <input type="text" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email" id="email-1" required>
-                <input type="text" placeholder="Gender" required>
-                <input type="text" placeholder="Address" required>
-                <button class="submit" type="submit" onclick="emailCheck()" class="normal">Submit</button>
+                <!-- <input type="" placeholder="Gender" required> -->
+                <select name="Gender" >
+                    <option value="Select Gender" style="color:#757575;">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input type="text" placeholder="Address" required><br>
+                <button class="reset-form" type="reset" onclick="emailCheck()" class="normal">Reset Form</button>
             </form>
+            
         </div>
-        <div id="camera">
-            <div class="photo">
-                <video id="video" playsinline autoplay></video>
-            </div>
-            <button type="button">Take Picture</button>
-            <button type="reset">Reset Everything</button>
+        <div id="take-photo">
+            <div id="camera"></div>
+            <button onclick="take_snapshot()">Take Picture</button>
+            <button onclick="set_camera()">Reset Camera</button>
         </div>
     </div>
     <script src="script.js"></script>
