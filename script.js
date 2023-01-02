@@ -3,9 +3,9 @@ var camera = document.querySelector("#camera")
 
 function emailCheck() {
 
-    var format = /^([a-zA-Z0-9\._]+)@+(vitstudent+).(ac+).(in)$/;
+    var format = /^([a-zA-Z0-9\._]+)@vitstudent([\.])ac([\.])in$/;
 
-    if (format.text(email1)) {
+    if (email1.match(format)) {
         alert("Valid email adress");
         return true;
     }
